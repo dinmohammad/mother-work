@@ -23,37 +23,48 @@
                     <img src="./assets/images/logo.png" alt="mother work logo" class="navbar-brand-logo" />
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex align-items-center gap-3">
+                    <button type="button"
+                        class="bg-theme-primary rounded-pill text-white login-button border-primary-1 px-4 py-2 d-block d-lg-none">
+                        Login
+                    </button>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav header-nav-menu mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-uppercase" href="#">About</a>
+                    <ul class="navbar-nav header-nav-menu mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link active-menu text-uppercase" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link text-uppercase" href="#">About</a>
+                        </li>
+                        <li class="nav-item position-relative">
                             <a class="nav-link text-uppercase" href="#">Story</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item position-relative">
                             <a class="nav-link text-uppercase" href="#">News</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item position-relative">
                             <a class="nav-link text-uppercase" href="#">Contact</a>
                         </li>
                     </ul>
 
                     <div class="d-flex gap-3">
                         <div class="content-translate-dropdown">
-                            <select id="languageSelect" class="form-select rounded-pill border-primary-1 py-2" >
+                            <select id="languageSelect" class="form-select rounded-pill border-primary-1 py-2">
                                 <option value="English">English</option>
                                 <option value="Bangla">Bangla</option>
                             </select>
                         </div>
 
-                        <button type="button" class="bg-theme-primary rounded-pill text-white login-button border-primary-1 px-4 py-2 ">
+                        <button type="button"
+                            class="bg-theme-primary rounded-pill text-white login-button border-primary-1 px-4 py-2 d-none d-lg-block">
                             Login
                         </button>
                     </div>
@@ -71,7 +82,10 @@
                         <div class="banner-inner-wrap">
                             <h2 class="title-one text-uppercase mb-0">Strengthening Workplaces</h2>
                             <h1 class="title-two text-theme-primary text-uppercase">Empowering Mothers</h1>
-                            <p class="mb-0">Ensuring their rights, health, and well-being leads to higher productivity, lower absenteeism, and a stronger workforce. This digital platform unifies training, monitoring, and real-time dashboards to support the implementation of the 7 Minimum Standards.</p>
+                            <p class="mb-0">Ensuring their rights, health, and well-being leads to higher productivity,
+                                lower absenteeism, and a stronger workforce. This digital platform unifies training,
+                                monitoring, and real-time dashboards to support the implementation of the 7 Minimum
+                                Standards.</p>
                         </div>
                     </div>
                 </div>

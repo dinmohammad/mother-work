@@ -43,6 +43,18 @@
         height: 750px;
         background-position: left;
     }
+    .navbar-collapse{
+        background-color: #BC3863;
+        padding: 15px;
+    }
+    .navbar-collapse li.nav-item a {
+        color: #fff;
+        border-bottom: 1px solid;
+        padding: 10px 0;
+    }
+    .navbar-collapse ul{
+        margin-bottom: 20px !important;
+    }
 }
 
 /* LG – Large (Laptops) */
