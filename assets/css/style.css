@@ -1,0 +1,103 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Mother work
+    Template URI: 
+    Description: This is html5 template
+    Author: Din Mohammad
+    Author URI: 
+    Version: 1.0
+
+----------------------------------------------------------------------------------- */
+
+/* Google Font Family import */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+/* font-family: "Bricolage Grotesque", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+
+
+/* ----------------------------------
+Defailt css - Start
+------------------------------------ */
+.body {
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.border-primary-1{
+    border: 1px solid #BC3863;
+}
+.bg-theme-primary{
+    background-color: #BC3863;
+}
+.text-theme-primary{
+    color: #BC3863;
+}
+/* ------------- END ./ ----------------- */
+
+
+/* ----------------------------------
+Header Section css - Start
+------------------------------------ */
+.navbar-brand-logo{
+    width: 213px;
+    height: 107px;
+}
+/* ------------- END ./ ----------------- */
+
+/* ----------------------------------
+Banner Section css - Start
+------------------------------------ */
+.homepage-banner-bg{
+    background-image: url('../images/banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 850px;
+}
+.banner-inner-wrap{
+    position: relative;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-one{
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.title-two{
+    font-size: 82px;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.banner-inner-wrap p{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+/* ------------- END ./ ----------------- */
+
+
+
+
+
+/* ----------------------------------
+Hero Section css - Start
+------------------------------------ */
+
+/* ------------- END ./ ----------------- */
