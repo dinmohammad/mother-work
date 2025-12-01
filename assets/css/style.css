@@ -40,6 +40,13 @@ a{
 .text-theme-primary{
     color: #BC3863;
 }
+.section-padding-tb-60{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-margin-t-50{
+    margin-top: 50px;
+}
 /* ------------- END ./ ----------------- */
 
 
@@ -97,6 +104,26 @@ Header Section css - Start
     transform: translate(-50%, -50%);
     border-radius: 61px;
 }
+.is-sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slideDown .50s ease-in-out 0s normal none 1 running;
+    z-index: 999;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .1);
+    background-color: #fff !important;
+    margin-top: 0 !important;
+}
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
 /* ------------- END ./ ----------------- */
 
 /* ----------------------------------
@@ -138,6 +165,29 @@ Banner Section css - Start
     font-family: "Bricolage Grotesque", sans-serif;
 }
 /* ------------- END ./ ----------------- */
+
+
+/* ----------------------------------
+Achievement Section css - Start
+------------------------------------ */
+.achievement-wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/vectors/achi_bg.jpg');
+}
+.achi-w-content{
+    padding: 50px ;
+}
+/* ------------- END ./ ----------------- */
+
+
+
+
+
+
+
+
+
 
 
 
