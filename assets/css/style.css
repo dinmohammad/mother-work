@@ -236,6 +236,7 @@ Achievement Section css - Start
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
+    z-index: -1;
 }
 .mother-at-work-wrapper::before{
     position: absolute;
@@ -248,6 +249,7 @@ Achievement Section css - Start
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    z-index: -1;
 }
 .sm-aw-box-img{
     position: relative;

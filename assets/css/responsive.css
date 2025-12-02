@@ -9,24 +9,43 @@
 
 /* SM – Small (Mobile Landscape / Small Devices) */
 @media (max-width: 767.98px) {
+    .single-m-aw-box {
+        margin-bottom: 30px;
+    }
+    .sm-aw-box-text h5 {
+        font-size: 26px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .sm-aw-box-text p {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+    }
     .title-one {
         font-size: 30px;
     }
+
     .title-two {
         font-size: 50px;
     }
-    .banner-inner-wrap p{
+
+    .banner-inner-wrap p {
         font-size: 18px;
         line-height: 30px;
     }
+
     .homepage-banner-bg,
-    .banner-inner-wrap{
+    .banner-inner-wrap {
         height: 750px;
         background-position: left;
     }
-    .achievement-wrapper::after{
-       display: none;
+
+    .achievement-wrapper::after {
+        display: none;
     }
+
     .achi-w-content {
         padding: 50px 30px 50px 30px;
     }
@@ -34,34 +53,57 @@
 
 /* MD – Medium (Tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .single-m-aw-box {
+        margin-bottom: 50px;
+    }
+    .sm-aw-box-text h5 {
+        font-size: 26px;
+    }
+
+    .sm-aw-box-text p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .sm-aw-box-img img {
+        height: 200px !important;
+    }
+
     .title-one {
         font-size: 35px;
     }
+
     .title-two {
         font-size: 60px;
     }
-    .banner-inner-wrap p{
+
+    .banner-inner-wrap p {
         font-size: 20px;
         line-height: 30px;
     }
+
     .homepage-banner-bg,
-    .banner-inner-wrap{
+    .banner-inner-wrap {
         height: 750px;
         background-position: left;
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         background-color: #BC3863;
         padding: 15px;
     }
+
     .navbar-collapse li.nav-item a {
         color: #fff;
         border-bottom: 1px solid;
         padding: 10px 0;
     }
-    .navbar-collapse ul{
+
+    .navbar-collapse ul {
         margin-bottom: 20px !important;
     }
-    .achievement-wrapper::after{
+
+    .achievement-wrapper::after {
         width: 50% !important;
     }
 }
@@ -71,26 +113,44 @@
     .title-one {
         font-size: 35px;
     }
+
     .title-two {
         font-size: 70px;
     }
-    .banner-inner-wrap p{
+
+    .banner-inner-wrap p {
         font-size: 20px;
         line-height: 30px;
     }
+
     .homepage-banner-bg,
-    .banner-inner-wrap{
+    .banner-inner-wrap {
         height: 750px;
     }
 }
+
 @media (max-width: 1199px) {
-    .single-box-item-one{
+    .single-box-item-one {
         margin-bottom: 30px;
     }
-    .achievement-wrapper::after{
+
+    .achievement-wrapper::after {
         width: 33%;
     }
+
+    .sm-aw-box-img img {
+        height: 300px;
+    }
+
+    .mother-at-work-wrapper::after {
+        height: 450px;
+    }
+
+    .mother-at-work-wrapper::before {
+        height: 350px;
+    }
 }
+
 /* XL – Extra Large (Desktops) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     /* your styles */
