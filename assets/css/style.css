@@ -47,6 +47,19 @@ a{
 .section-margin-t-50{
     margin-top: 50px;
 }
+.seciton-heading h2{
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.seciton-heading p{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    color: #2B2B2B;
+}
 /* ------------- END ./ ----------------- */
 
 
@@ -278,6 +291,18 @@ Achievement Section css - Start
 /* ------------- END ./ ----------------- */
 
 
+/* ----------------------------------
+why work Section css - Start
+------------------------------------ */
+.why-mother-work-wrapper{
+    position: relative;
+    background-image: url('..//images/vectors/why_work_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+/* ------------- END ./ ----------------- */
 
 
 

@@ -9,6 +9,9 @@
 
 /* SM – Small (Mobile Landscape / Small Devices) */
 @media (max-width: 767.98px) {
+    .why-mother-work-wrapper{
+        height: 600px;
+    }
     .single-m-aw-box {
         margin-bottom: 30px;
     }
