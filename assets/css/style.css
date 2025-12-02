@@ -222,6 +222,58 @@ Achievement Section css - Start
 
 
 
+/* ----------------------------------
+7 work Section css - Start
+------------------------------------ */
+.mother-at-work-wrapper::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/pattarn/Vector.png');
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 819px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+.mother-at-work-wrapper::before{
+    position: absolute;
+    content: '';
+    background-image: url('../images/pattarn/Vector-2.png');
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.sm-aw-box-img{
+    position: relative;
+}
+.mother-aw-section-content{
+    max-width: 1150px;
+}
+.sm-aw-box-text h5{
+    font-size: 36px;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+}
+.sm-aw-box-text p{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    color: #2B2B2B;
+}
+.sm-aw-box-img img{
+    filter: drop-shadow(4px 4px 120px #BC3863);
+}
+/* ------------- END ./ ----------------- */
 
 
 
