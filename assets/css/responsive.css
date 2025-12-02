@@ -24,6 +24,12 @@
         height: 750px;
         background-position: left;
     }
+    .achievement-wrapper::after{
+       display: none;
+    }
+    .achi-w-content {
+        padding: 50px 30px 50px 30px;
+    }
 }
 
 /* MD – Medium (Tablets) */
@@ -55,6 +61,9 @@
     .navbar-collapse ul{
         margin-bottom: 20px !important;
     }
+    .achievement-wrapper::after{
+        width: 50% !important;
+    }
 }
 
 /* LG – Large (Laptops) */
@@ -74,7 +83,14 @@
         height: 750px;
     }
 }
-
+@media (max-width: 1199px) {
+    .single-box-item-one{
+        margin-bottom: 30px;
+    }
+    .achievement-wrapper::after{
+        width: 33%;
+    }
+}
 /* XL – Extra Large (Desktops) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     /* your styles */

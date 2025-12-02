@@ -53,6 +53,10 @@ a{
 /* ----------------------------------
 Header Section css - Start
 ------------------------------------ */
+.header-main-wrapper{
+    position: relative;
+    transition: .7s;
+}
 .header-main-wrapper .navbar-brand-logo{
     width: 213px;
     height: 107px;
@@ -171,12 +175,48 @@ Banner Section css - Start
 Achievement Section css - Start
 ------------------------------------ */
 .achievement-wrapper{
+    position: relative;
     width: 100%;
     height: 100%;
     background-image: url('../images/vectors/achi_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.achievement-wrapper::after{
+    position: absolute;
+    content: '';
+    width: 24.5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/vectors/achievement-left-img.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .achi-w-content{
-    padding: 50px ;
+    padding: 60px 50px;
+}
+.single-box-item-one {
+    position: relative;
+    background: #00000091;
+    padding: 30px;
+    border-radius: 12px;
+}
+.single-box-item-one h2{
+    font-size: 41px;
+    line-height: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+}
+.single-box-item-one p{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
 }
 /* ------------- END ./ ----------------- */
 
