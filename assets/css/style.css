@@ -63,6 +63,9 @@ a{
     font-family: "Roboto", sans-serif;
     color: #2B2B2B;
 }
+.bg-linear-gradient-one{
+    background: linear-gradient(277deg, #ffe4ec 0%, #f7eaff 40%, #e6f2ff 100%);
+}
 /* ------------- END ./ ----------------- */
 
 
@@ -410,7 +413,35 @@ stories Section css - Start
 }
 /* ------------- END ./ ----------------- */
 
-
+/* ----------------------------------
+Footer Section css - Start
+------------------------------------ */
+.footer-list-wrap ul li a{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    color: #313436;
+    transition: .5s;
+}
+.footer-list-wrap ul li a:hover{
+    color: #BC3863;
+    transition: .5s;
+}
+.footer-title{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    color: #BC3863;
+}
+.footer-logo-wrap img {
+    height: 92px;
+    width: auto;
+}
+/* ------------- END ./ ----------------- */
 
 
 

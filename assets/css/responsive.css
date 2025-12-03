@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 1199px) {
+    .footer-logo-wrap img {
+        height: 80px;
+        width: auto;
+    }
     .single-box-item-one {
         margin-bottom: 30px;
     }
