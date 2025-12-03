@@ -446,6 +446,9 @@ stories Section css - Start
     transform: scale(1.1);
     transition: .5s;
 }
+.big-single-content-box .single-cb-text p{
+    -webkit-line-clamp: 4 !important;
+}
 /* ------------- END ./ ----------------- */
 
 /* ----------------------------------
