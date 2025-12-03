@@ -82,7 +82,6 @@
     .header-main-wrapper .navbar-nav li.nav-item a.active-menu:after {
         bottom: -4px;
     }
-
 }
 
 /* MD – Medium (Tablets) */
@@ -167,6 +166,12 @@
     .footer-logo-wrap img {
         height: 80px;
         width: auto;
+    }
+    .footer-wrapper{
+        position: relative !important;
+    }
+    .site-wrapper{
+        padding-bottom: 0 !important;
     }
 
     .single-box-item-one {
