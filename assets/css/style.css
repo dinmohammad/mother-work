@@ -109,7 +109,7 @@ Header Section css - Start
 }
 .header-main-wrapper .navbar-brand-logo{
     width: 213px;
-    height: 107px;
+    height: auto;
 }
 .header-main-wrapper .navbar-nav li.nav-item a {
     font-size: 16px;

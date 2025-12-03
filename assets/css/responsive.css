@@ -2,6 +2,20 @@
    RESPONSIVE BREAKPOINTS
    ============================ */
 
+
+
+@media (max-width: 375px) {
+    .header-main-wrapper .navbar-brand-logo {
+        width: 140px !important;
+    }
+    .title-one {
+        font-size: 24px !important;
+    }
+    .title-two {
+        font-size: 40px !important;
+        margin-top: 10px !important;
+    }
+}
 /* XS – Extra Small (Mobile Portrait) */
 @media (max-width: 575.98px) {
     .why-mother-work-wrapper {
@@ -16,6 +30,16 @@
     }
     .sm-aw-box-img img {
         height: 248px !important;
+    }
+    .header-main-wrapper .navbar-brand-logo {
+        width: 160px ;
+        height: auto;
+    }
+}
+@media (max-width: 350px) {
+    .header-main-wrapper .navbar-brand-logo {
+        width: 110px !important;
+        height: auto;
     }
 }
 
