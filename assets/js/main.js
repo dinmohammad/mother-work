@@ -18,7 +18,7 @@
     });
 
     const swiper = new Swiper(".mother_work_video_slider", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         autoplay: {
@@ -48,6 +48,10 @@
             $sticky.removeClass("is-sticky");
         }
     });
+
+
+    
+
 
 
 

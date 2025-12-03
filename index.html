@@ -7,13 +7,12 @@
     <title>Mother Work</title>
     <!-- Bootstrap 5.3.3 -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
 </head>
 
 <body>
@@ -21,7 +20,7 @@
     <header class="header-main-wrapper position-fixed w-100 z-3">
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="#">
                     <img src="./assets/images/logo.png" alt="mother work logo" class="navbar-brand-logo" />
                 </a>
 
@@ -74,6 +73,9 @@
             </div>
         </nav>
     </header>
+
+    <!-- Loader -->
+    <div id="pageLoader">Translating...</div>
 
     <div class="main-wrapper">
 
@@ -141,7 +143,7 @@
             </div>
         </section>
 
-        <section class="mother-at-work-wrapper position-relative overflow-hidden section-padding-tb-60">
+        <section class="mother-at-work-wrapper position-relative overflow-hidden section-padding-tb-60" id="mother_at_work_wrapper">
             <div class="container-sm">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
@@ -345,10 +347,10 @@
                                         <div class="swiper-slide">
                                             <div class="single-rw-content-box">
                                                 <a class="youtube-popup video-trigger"
-                                                    href="https://www.youtube-nocookie.com/embed/urk-6N0pXFk">
+                                                    href="https://www.youtube-nocookie.com/embed/5HTpARmdyGs">
                                                     <div class="youtube-thumb-wrapper">
                                                         <img class="youtube-thumb-img"
-                                                            src="https://img.youtube.com/vi/urk-6N0pXFk/hqdefault.jpg"
+                                                            src="https://img.youtube.com/vi/5HTpARmdyGs/hqdefault.jpg"
                                                             alt="YouTube Thumbnail">
                                                         <div class="youtube-play-icon">
                                                             <span>▶</span>
@@ -360,10 +362,10 @@
                                         <div class="swiper-slide">
                                             <div class="single-rw-content-box">
                                                 <a class="youtube-popup video-trigger"
-                                                    href="https://www.youtube-nocookie.com/embed/urk-6N0pXFk">
+                                                    href="https://www.youtube-nocookie.com/embed/1MGjcMVEHuU">
                                                     <div class="youtube-thumb-wrapper">
                                                         <img class="youtube-thumb-img"
-                                                            src="https://img.youtube.com/vi/urk-6N0pXFk/hqdefault.jpg"
+                                                            src="https://img.youtube.com/vi/1MGjcMVEHuU/hqdefault.jpg"
                                                             alt="YouTube Thumbnail">
                                                         <div class="youtube-play-icon">
                                                             <span>▶</span>
@@ -375,10 +377,10 @@
                                         <div class="swiper-slide">
                                             <div class="single-rw-content-box">
                                                 <a class="youtube-popup video-trigger"
-                                                    href="https://www.youtube-nocookie.com/embed/urk-6N0pXFk">
+                                                    href="https://www.youtube-nocookie.com/embed/3nKwAZjWaKA">
                                                     <div class="youtube-thumb-wrapper">
                                                         <img class="youtube-thumb-img"
-                                                            src="https://img.youtube.com/vi/urk-6N0pXFk/hqdefault.jpg"
+                                                            src="https://img.youtube.com/vi/3nKwAZjWaKA/hqdefault.jpg"
                                                             alt="YouTube Thumbnail">
                                                         <div class="youtube-play-icon">
                                                             <span>▶</span>
@@ -540,6 +542,9 @@
         </div>
     </footer>
 
+     <!-- Google Translate DIV -->
+    <div id="google_translate_element" style="display:none;"></div>
+
     <!-- jquery  -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js -->
@@ -552,10 +557,49 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'bn,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
+        function changeLanguage(langCode) {
+            const interval = setInterval(function () {
+                const $gtCombo = $('.goog-te-combo');
+
+                if ($gtCombo.length) {
+                    // Set the value and trigger the change
+                    $gtCombo.val(langCode);
+                    $gtCombo[0].dispatchEvent(new Event('change'));
+
+                    clearInterval(interval);
+                }
+            }, 500); // check every 0.5 sec until dropdown appears
+        }
+
+        $("#languageSelect").on("change", function () {
+            const lang = $(this).val() === "Bangla" ? "bn" : "en";
+            $("#pageLoader").fadeIn(200);
+            changeLanguage(lang);
+            
+            $(".main-wrapper").css("margin-top", "-40px");
+
+            setTimeout(() => {
+                $("#pageLoader").fadeOut(200);
+            }, 2000); 
+        });
 
 
     </script>
+
+
+
 
 </body>
 
