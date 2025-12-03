@@ -138,6 +138,10 @@ Header Section css - Start
     background-color: #fff !important;
     margin-top: 0 !important;
 }
+.is-sticky img.navbar-brand-logo {
+    height: 60px;
+    width: auto;
+}
 @keyframes slideDown {
     0% {
         transform: translateY(-100%)
