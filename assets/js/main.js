@@ -50,7 +50,10 @@
     });
 
 
-    
+    $('.counter').counterUp({
+        delay: 10,   // milliseconds delay between increments
+        time: 2000   // total duration of counting
+    });
 
 
 
