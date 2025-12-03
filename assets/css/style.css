@@ -304,7 +304,59 @@ why work Section css - Start
 }
 /* ------------- END ./ ----------------- */
 
+/* ----------------------------------
+Mother work resource Section css - Start
+------------------------------------ */
+.youtube-thumb-wrapper {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.youtube-thumb-img {
+    width: 100%;
+    display: block;
+}
+
+.youtube-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: #ff0000cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    transition: 0.3s;
+}
+
+.youtube-thumb-wrapper:hover .youtube-play-icon {
+    background: #ff0000cc;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.swiper.mother_work_video_slider{
+    padding-bottom: 60px;
+}
+.swiper.mother_work_video_slider span.swiper-pagination-bullet{
+    width: 30px;
+    border-radius: 8px !important;
+    height: 5px;
+    transition: .5s;
+}
+.swiper.mother_work_video_slider span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #BC3863;
+    width: 50px;
+    border-radius: 8px !important;
+    transition: .5s
+}
+/* ------------- END ./ ----------------- */
 
 
 
